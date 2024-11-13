@@ -5,7 +5,7 @@
 
 
         <h1><?php echo single_cat_title();?></h1>
-        
+
         <?php get_template_part('includes/section','archive');?>
 
         <!-- <?php previous_post_link();?>
@@ -22,6 +22,8 @@
                 'total' => $wp_query->max_num_pages
             ));
         ?>
+
+        <?php wp_link_pages();?>
 
     </div>
 </section>

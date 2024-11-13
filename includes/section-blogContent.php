@@ -30,7 +30,9 @@
             </a>
     <?php endforeach?>
 
-    <?php comments_template();?>
+    <?php wp_link_pages();?>
+
+    <?php// comments_template();?>
 
 
 <?php endwhile; else: endif;?>
